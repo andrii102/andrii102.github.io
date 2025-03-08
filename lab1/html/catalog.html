@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/catalog.css" />
+    <title>Catalog</title>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="../index.html">Home</a></li>
+                <li class="navbar-item"><a href="/catalog.html">Catalog</a></li>
+                <li class="navbar-item"><a href="/cart.html">Shopping Cart</a></li>
+                <li class="navbar-item""><a href="/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <h2 class="title">Catalog</h2>
+        <div class="catalog-container">
+            <div class="product-container">
+                <div class="product-list">
+                    <div class="product">
+                        <a href="#"><img src="../assets/book1.jpg" alt="book"></a>
+                        <h3>Book1</h3>
+                        <p>Price: $10</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="../assets/book2.jpg" alt="book"></a>
+                        <h3>Book2</h3>
+                        <p>Price: $15</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="../assets/book3.jpg" alt="book"></a>
+                        <h3>Book3</h3>
+                        <p>Price: $19.99</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="../assets/book4.jpg" alt="book"></a>
+                        <h3>Book4</h3>
+                        <p>Price: $12.99</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="../assets/book5.jpg" alt="book"></a>
+                        <h3>Book5</h3>
+                        <p>Price: $14.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters-container">
+                <div class="filters">
+                    <h2>Search and filter</h2>
+                    <form action="#" method="GET">
+                        <div class="filter">
+                            
+                            <label for="search">Search</label>
+                            <input type="text" name="search" placeholder="Search by title">
+                        </div>
+
+                        <div class="filter">
+                            <label for="price">Price:</label>
+                            <input type="range" id="price">
+                        </div>
+
+                        <div class="filter">
+                            <label for="genre">Genre:</label>
+                            <select name="genre" id="genre">
+                                <option value="genre1">Genre 1</option>
+                                <option value="genre2">Genre 2</option>
+                                <option value="genre3">Genre 3</option>
+                            </select>
+                        </div> 
+                    </form>
+                   
+                </div>
+                
+                <button type="submit">Search</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

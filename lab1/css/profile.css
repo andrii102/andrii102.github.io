@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+}
+.navbar-list {
+    display: flex;
+    list-style: none;
+}
+.navbar-item {
+    margin-right: 10px;
+}
+.navbar-item a {
+    font-size: large;
+    text-decoration: none;
+    color: #e7e7e7;
+}
+
+.title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.edit-btn {
+    background-color: #191919;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.edit-btn:hover {
+    background-color: #444444;
+}
+
+.profile-settings {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-settings h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.setting {
+    margin-bottom: 20px;
+}
+
+.setting label {
+    font-weight: bold;
+}
+
+.setting input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #191919;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #444444;
+}
+.order-history{
+    margin: 20px;
+    border-style: none;
+    border-radius: 8px;
+}
+.order-list th, .order-list td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.order-list th:nth-child(1), 
+.order-list td:nth-child(1) {
+    width: 40%;
+}
+.order-list th:nth-child(2), 
+.order-list td:nth-child(2) {
+    width: 20%;
+}
+.order-list th:nth-child(3), 
+.order-list td:nth-child(3) {
+    width: 20%;
+}
+.order-list th:nth-child(4), 
+.order-list td:nth-child(4) {
+    width: 20%;
+}
+footer {
+    background-color: #191919;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+@media (min-width:1200px){
+    body{
+        font-size: x-large;
+    }
+    .navbar a{
+        font-size: x-large;
+    }
+}
