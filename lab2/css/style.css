@@ -91,6 +91,9 @@ body{
     background: #0056b3;
 }
 .btn
+main {
+    flex-grow: 1;
+}
 footer{
     background-color: #191919;
     color: #e7e7e7;
