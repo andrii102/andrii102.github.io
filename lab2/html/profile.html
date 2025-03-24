@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="../index.html">Home</a></li>
+                <li class="navbar-item"><a href="catalog.html">Catalog</a></li>
+                <li class="navbar-item"><a href="cart.html">Shopping Cart</a></li>
+                <li class="navbar-item"><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+
+        <h2 class="title">User Profile</h2>
+
+        <div class="profile-container">
+            <div class="profile-info">
+                <h3>Personal Information</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Book St., Library City, BK 12345</p>
+                <button class="edit-btn">Edit Profile</button>
+            </div>
+
+            <div class="profile-settings">
+                <h3>Account Settings</h3>
+                <form action="#" method="POST">
+                    <div class="setting">
+                        <label for="new-password">New Password:</label>
+                        <input type="password" id="new-password" name="new-password" placeholder="Enter new password">
+                    </div>
+
+                    <div class="setting">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+                    </div>
+
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="order-history">
+            <h3>Order History</h3>
+            <table class="order-list">
+                <thead>
+                   <tr>                
+                        <th><h3>Name</h3></th>
+                        <th><h3>Quantity</h3></th>
+                        <th><h3>Status</h3></th>
+                        <th><h3>Total</h3></th>
+                   </tr> 
+                </thead>
+                <tbody>
+                 <tr>
+                    <td class="order"><h4>bookname</h3></td>      
+                    <td><h4>2</h4></td>
+                    <td><h4>Sent</h4></td>
+                    <td><h4>$30</h4> </td>        
+                </tr>   
+                </tbody>
+                
+            </table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -28,10 +28,10 @@ body {
 }
 
 .profile-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 20px;  
+    padding: 20px;
 }
 
 .profile-info {
@@ -40,7 +40,6 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: fit-content;
 }
 
 .profile-info h3 {
@@ -72,8 +71,6 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: fit-content;
-
 }
 
 .profile-settings h3 {
@@ -151,5 +148,4 @@ footer {
     .navbar a{
         font-size: x-large;
     }
-
 }
