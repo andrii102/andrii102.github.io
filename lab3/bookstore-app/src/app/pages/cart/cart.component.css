@@ -1,0 +1,33 @@
+.cart-item {
+    transition: all 0.2s;
+  }
+  
+  .cart-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Quantity input */
+  .input-group {
+    width: 120px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cart-item .col-2 {
+      margin-bottom: 1rem;
+    }
+    
+    .cart-item .col-5 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .cart-item .col-3, 
+    .cart-item .col-2 {
+      text-align: center !important;
+    }
+  }
+  
+  /* Empty cart icon */
+  .bi-cart-x {
+    opacity: 0.5;
+  }

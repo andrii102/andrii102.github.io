@@ -1,0 +1,16 @@
+footer {
+    background-color: 1B262C;
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #adb5bd !important;
+  }
+  
+  .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
