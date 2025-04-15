@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common'
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore'
+import { enviroment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -13,16 +14,7 @@ import { getFirestore } from 'firebase/firestore'
   standalone: true
 })
 export class NavbarComponent implements OnInit {
-  private firebaseConfig = {
-    apiKey: "AIzaSyDvztJiLGgMRoLx9p5lhv8ZPWFDpv2GZNs",
-    authDomain: "bookstore-6cfae.firebaseapp.com",
-    projectId: "bookstore-6cfae",
-    storageBucket: "bookstore-6cfae.firebasestorage.app",
-    messagingSenderId: "504843559245",
-    appId: "1:504843559245:web:1dec06faf8c9385a59d704",
-    measurementId: "G-7LJKX0EMD4"
-  };
-
+  private firebaseConfig = enviroment.firebaseConfig;
   isLoggedIn:boolean=false;
   app:any;    
   auth:any;
