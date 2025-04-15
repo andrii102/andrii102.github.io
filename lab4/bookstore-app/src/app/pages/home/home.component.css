@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.carousel-item img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+  }
+
+.carousel{
+    width: 80%;
+}
+
+.bestsellers {
+    padding: 20px 0;
+  }
+  
+  .book-image-container {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .book-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .card{
+    width: 250px;
+    height: auto;
+  }
+
+  .bestsellers{
+    justify-items: center;
+  }

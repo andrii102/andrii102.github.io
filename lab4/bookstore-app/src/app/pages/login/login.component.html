@@ -1,0 +1,65 @@
+<h2 *ngIf="isLoginMode" class="text-center mt-3">Login</h2>
+<h2 *ngIf="!isLoginMode" class="text-center mt-3">Sign Up</h2>
+
+<form (ngSubmit)="handleSubmit()" class="container mt-4">
+  <div class="form-group" *ngIf="!isLoginMode">
+    <label for="name">Name</label>
+    <input 
+      type="text" 
+      [(ngModel)]="name" 
+      name="name" 
+      id="name" 
+      class="form-control" 
+      placeholder="Name" 
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input 
+      type="email" 
+      [(ngModel)]="email" 
+      name="email" 
+      id="email" 
+      class="form-control" 
+      placeholder="Email" 
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input 
+      type="password" 
+      [(ngModel)]="password" 
+      name="password" 
+      id="password" 
+      class="form-control" 
+      placeholder="Password" 
+      required>
+  </div>
+
+  <div class="form-group" *ngIf="!isLoginMode">
+    <label for="age">Age</label>
+    <input 
+      type="number" 
+      [(ngModel)]="age" 
+      name="age" 
+      id="age" 
+      class="form-control" 
+      placeholder="Age" 
+      required>
+  </div>
+
+  <button 
+    type="submit" 
+    class="btn btn-primary btn-block mt-3 m-2">
+    {{ isLoginMode ? 'Login' : 'Sign Up' }}
+  </button>
+  
+  <button 
+  (click)="toggleMode()" 
+  class="btn btn-secondary btn-block mt-3 m-2">
+  {{ isLoginMode ? 'Dont have an account? - Sign Up' : 'Already have an account? - Login' }}
+</button>
+</form>
+
