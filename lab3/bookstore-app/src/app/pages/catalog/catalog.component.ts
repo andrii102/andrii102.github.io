@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgFor, DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BookCardComponent } from '../../components/book-card/book-card.component';
@@ -8,14 +8,17 @@ import { BookService } from '../../shared/services/book.service';
 @Component({
   standalone: true,
   imports: [CommonModule, NgFor, FormsModule, BookCardComponent],
+  providers: [BookService],
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css']
 })
-export class CatalogComponent {
-  private books:Book[]= [];
+export class CatalogComponent implements OnInit{
+  public books:Book[]= [];
 
-  constructor(private bookService: BookService){
-    this.books = bookService.getBooks(); 
+  constructor(private bookService: BookService){}
+
+  ngOnInit() {
+    this.books = this.bookService.getBooks();
   }
 
   // Filter controls
