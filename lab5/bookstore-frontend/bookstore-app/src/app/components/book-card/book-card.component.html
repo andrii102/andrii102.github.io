@@ -1,0 +1,23 @@
+<div class="book-card">
+  <div class="card h-100">
+    <!-- Image with strict size control -->
+    <div class="book-image-container">
+      <img [src]="book.imageUrl" class="book-image" [alt]="book.title">
+    </div>
+
+    <!-- Card body -->
+    <div class="card-body">
+      <h6 class="card-title text-truncate">{{ book.title }}</h6>
+      <p class="card-text text-muted small mb-2">{{ book.author }}</p>
+      <div class="book-footer">
+        <span class="book-genre">{{ book.genre }}</span>
+        <span class="book-price">${{ book.price | number:'1.2-2' }}</span>
+      </div>
+    </div>
+
+    <!-- Card footer -->
+    <button class="btn btn-sm btn-outline-primary w-100" (click)="addToCart()">
+      <i class="bi bi-cart-plus"></i> Add to Cart
+    </button>
+  </div>
+</div>
